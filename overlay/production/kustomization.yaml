@@ -1,5 +1,5 @@
 resources:
   - ../../base
   - namespace.yaml
-
-namePrefix: prod-
+  - service.yaml
+  - ingress.yaml

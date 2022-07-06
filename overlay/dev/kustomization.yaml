@@ -1,5 +1,7 @@
 resources:
   - ../../base
   - namespace.yaml
+  - service.yaml
+  - ingress.yaml
 
-namePrefix: dev-
+namespace: example-app-dev
