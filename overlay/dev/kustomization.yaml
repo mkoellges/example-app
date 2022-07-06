@@ -3,3 +3,5 @@ resources:
   - namespace.yaml
 
 namePrefix: dev-
+
+namespace: example-app-dev
