@@ -3,3 +3,5 @@ resources:
   - namespace.yaml
   - service.yaml
   - ingress.yaml
+
+namespace: example-app-production
