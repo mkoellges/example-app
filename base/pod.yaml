@@ -2,13 +2,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx
+  name: my-nginx
   labels:
-    app: nginx
+    app: my-nginx
 spec:
   selector:
     matchLabels:
-      app: nginx
+      app: my-nginx
   replicas: 1
   strategy:
     rollingUpdate:
@@ -18,7 +18,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx
+        app: my-nginx
     spec:
       # initContainers:
       # Init containers are exactly like regular containers, except:
@@ -45,7 +45,7 @@ spec:
             periodSeconds: 10
           readinessProbe:
             httpGet:
-              path: /_status/healthz
+              path: /
               port: 80
             initialDelaySeconds: 5
             timeoutSeconds: 2
@@ -54,5 +54,5 @@ spec:
             periodSeconds: 10
           ports:
             - containerPort: 80
-              name: nginx
+              name: my-nginx
       restartPolicy: Always
