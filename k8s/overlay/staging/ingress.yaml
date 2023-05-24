@@ -2,23 +2,23 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: my-nginx
+  name: example-app
   annotations:
-    kubernetes.io/ingress.class: "nginx"
-    cert-manager.io/issuer: "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-cluster-issuer"
 spec:
+  ingressClassName: nginx
   tls:
     - hosts:
-        - app.staging.mkoellges.guru
-      secretName: app-staging-tls
+        - test.koellgma.de
+      secretName: example-cert
   rules:
-    - host: app.staging.mkoellges.guru
+    - host: test.koellgma.de
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: my-nginx
+                name: example-app
                 port:
                   number: 80
