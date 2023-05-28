@@ -5,7 +5,7 @@ metadata:
   name: my-nginx
 spec:
   selector:
-    app: my-nginx
+    app: example-app
   type: ClusterIP
   ports:
     - name: my-nginx
