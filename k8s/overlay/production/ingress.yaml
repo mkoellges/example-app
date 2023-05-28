@@ -5,14 +5,14 @@ metadata:
   name: my-nginx
   annotations:
     kubernetes.io/ingress.class: "nginx"
-    cert-manager.io/issuer: "letsencrypt-prod"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
 spec:
   tls:
     - hosts:
-        - app.mkoellges.guru
+        - www.koellgma.de
       secretName: app-tls
   rules:
-    - host: app.mkoellges.guru
+    - host: www.koellgma.de
       http:
         paths:
           - path: /
