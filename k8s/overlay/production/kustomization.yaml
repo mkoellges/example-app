@@ -1,6 +1,7 @@
 resources:
   - ../../base
   - namespace.yaml
+  - configmap.yaml
   - service.yaml
   - ingress.yaml
 

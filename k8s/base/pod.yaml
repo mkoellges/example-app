@@ -51,7 +51,7 @@ spec:
           ports:
             - containerPort: 80
               name: example-app
-          # envFrom:
-          #   - configMapRef:
-          #       name: example-app    
+          envFrom:
+            - configMapRef:
+                name: example-app    
       restartPolicy: Always
