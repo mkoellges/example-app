@@ -20,6 +20,6 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: example-app
+                name: my-nginx
                 port:
                   number: 80
