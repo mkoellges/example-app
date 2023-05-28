@@ -8,6 +8,5 @@ configMapGenerator:
 - name: example-app
   literals:
     - STAGE="STAGING"
-    - HOST_NAME="$(hostname)"
 
 namespace: example-app-staging
