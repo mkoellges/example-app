@@ -1,8 +1,12 @@
 resources:
   - ../../base
   - namespace.yaml
-  - configmap.yaml
   - service.yaml
   - ingress.yaml
+
+configMapGenerator:
+- name: example-app
+  literals:
+    - STAGE="DEV"
 
 namespace: example-app-dev
