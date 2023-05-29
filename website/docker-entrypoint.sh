@@ -22,8 +22,8 @@ cat  << EOF >  /usr/share/nginx/html/index.html
 				</ul>
 			</nav>
 			<div class="center">
-			<H1>Welcome to my server at $STAGE...</H1>
-            I run on node $(hostname)
+			<H1>Welcome to my server at <font color="#FF0000" $STAGE </font>...</H1>
+            <h1>I run on node <font> color="#FFFF00" $(hostname) </font></h1>
 			<div class="buttons">
 			<button>Explore More</button>
 			<button class="btn2">Subscribe Us</button>
