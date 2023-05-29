@@ -22,10 +22,10 @@ cat  << EOF >  /usr/share/nginx/html/index.html
 				</ul>
 			</nav>
 			<div class="center">
-			<p style="font-size:14px; "> Stage: <font color="#FF0000"> ${STAGE} </font> </p>
-           <p style="font-size:14px; ">  Node:  <font color="#FFFF00"> $(hostname)</font> </p>
+			<p style="font-size:20px; "> Stage: <font color="#FF0000"> ${STAGE} </font> </p>
+            <p style="font-size:20px; ">  Node:  <font color="#FFFF00"> $(hostname)</font> </p>
 			<div class="buttons">
-			<button>Explore More</button>
+			<button class="btn1">Explore More</button>
 			<button class="btn2">Subscribe Us</button>
 		</div>
 		</div>
