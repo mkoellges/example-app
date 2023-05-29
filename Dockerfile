@@ -4,4 +4,5 @@ RUN mkdir /website
 
 EXPOSE 80
 
-COPY website/* /usr/share/nginx/html
+COPY website/html/* /usr/share/nginx/html
+COPY  website/docker-entrypoint.sh  /
