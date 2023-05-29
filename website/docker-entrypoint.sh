@@ -22,8 +22,8 @@ cat  << EOF >  /usr/share/nginx/html/index.html
 				</ul>
 			</nav>
 			<div class="center">
-			Stage: <font color="#FF0000"> ${STAGE} </font>
-            Node:  <font color="#FFFF00"> $(hostname)</font>
+			<p style="font-size:14px; "> Stage: <font color="#FF0000"> ${STAGE} </font> </p>
+           <p style="font-size:14px; ">  Node:  <font color="#FFFF00"> $(hostname)</font> </p>
 			<div class="buttons">
 			<button>Explore More</button>
 			<button class="btn2">Subscribe Us</button>
