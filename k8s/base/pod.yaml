@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: example-app
-          image: mkoellges/example:1.14
+          image: mkoellges/example:1.15
           imagePullPolicy: IfNotPresent
           resources:
             requests:
