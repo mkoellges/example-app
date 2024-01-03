@@ -53,5 +53,5 @@ spec:
               name: example-app
           envFrom:
             - configMapRef:
-                name: example-app    
+                name: example-app
       restartPolicy: Always
